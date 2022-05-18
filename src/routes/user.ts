@@ -2,12 +2,12 @@ import { Router } from 'express';
 
 import UserController from '../controllers/user.controller';
 
-const execmdRouter: Router = Router();
+const userRouter: Router = Router();
 
-// execmdRouter.get('/', UserController.allUsers);
-// execmdRouter.get('/', UserController.getUser);
-execmdRouter.post('/', UserController.postUser);
-// execmdRouter.put('/', UserController.updateUser);
-// execmdRouter.delete('/', UserController.deleteUser);
+userRouter.get('/', UserController.allUsers);
+userRouter.get('/:email', UserController.getUser);
+userRouter.post('/', UserController.postUser);
+userRouter.put('/:email', UserController.updateUser);
+userRouter.delete('/:email', UserController.deleteUser);
 
-export default execmdRouter;
+export default userRouter;
