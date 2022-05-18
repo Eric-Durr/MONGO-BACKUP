@@ -13,7 +13,7 @@ app.use(express.json());
 // API ROUTES
 
 app.get('/', (_: express.Request, res: express.Response) => {
-  res.status(200).send('<h1>API PARA EL EJERCICIO DEL GRUPO 103 - 11 de mayo de 2022</h1>');
+  res.status(200).send('<h1>API PARA EL EJERCICIO DEL GRUPO 103 - 19 de mayo de 2022</h1>');
 });
 
 app.use('/user', user);
